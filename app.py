@@ -4,8 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Witaj w moim API!!!"
-    # return jsonify({"message": "Witaj w moim API!"})
+    return "Witaj w moim API!!! :3"
 
 @app.route('/api/v1.0/predict', methods=['GET'])
 def predict():
@@ -26,3 +25,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run(port=5005)
+    # app.run(port=5000)
